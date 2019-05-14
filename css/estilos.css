@@ -1,0 +1,62 @@
+body{
+    margin: 0px;
+}
+.bodyFundoMadeira{
+    /*background-color: red;*/
+    background-image: url(../imagens/madeira.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: inherit;
+}
+#bodyIndex{
+    background-image: url(../imagens/salada2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: inherit;
+}
+  #button01{
+            width:100%;
+            height:700px;
+            border: none;
+/*            background-image: url(../imagens/salada2.jpg);
+            background-attachment: inherit;
+            background-size:100%;
+            background-repeat: no-repeat;
+            background-position: center;*/
+            background-color: transparent;
+            color:white;
+            font-size:150px;
+            font-family: inherit
+        }
+        #botaoConfig{
+         background-image: url(../imagens/gear.png);
+         width: 70px;
+         height:70px;
+         background-color: transparent;
+         background-repeat: no-repeat;
+         border:none;
+         margin: 5%;
+         float: right;
+        }
+        #divListaCategorias{
+             font-size: 75px;
+             color: white;
+             text-align: center;
+             margin: 2%;     
+        }
+        .limparFloat{
+            clear: both;
+        }
+        .titulo{
+            text-align: center;
+            font-size: 50px;
+        }
+        #botaoCadastro{
+            color: white;
+            font-size: 20px;
+            background-color: black;
+            padding: 1%;
+            border:none;
+            margin:1%;
+            border-radius: 15px;
+        }
