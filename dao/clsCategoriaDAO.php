@@ -3,7 +3,7 @@
 class CategoriaDAO {
     
     public static function inserir($categoria) {
-        $sql = "INSERT INTO faleConosco ( nome ) VALUES ( "
+        $sql = "INSERT INTO categorias ( nome ) VALUES ( "
                 . " '" . $categoria->getNome() . "' )";
               
         Conexao::executar($sql);
