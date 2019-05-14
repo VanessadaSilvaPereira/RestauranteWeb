@@ -16,7 +16,7 @@ body{
 }
   #button01{
             width:100%;
-            height:700px;
+            height:800px;
             border: none;
 /*            background-image: url(../imagens/salada2.jpg);
             background-attachment: inherit;
@@ -26,7 +26,7 @@ body{
             background-color: transparent;
             color:white;
             font-size:150px;
-            font-family: inherit
+            font-family: inherit;
         }
         #botaoConfig{
          background-image: url(../imagens/gear.png);
@@ -55,8 +55,26 @@ body{
             color: white;
             font-size: 20px;
             background-color: black;
-            padding: 1%;
+            padding: 0.5%;
             border:none;
             margin:1%;
-            border-radius: 15px;
+            border-radius: 10px;
+            float:right;
+             font-family: inherit;
+            margin-right: 25%;
+        }
+        label{
+            margin-left: 25%;
+            color:black;
+            font-size:35px;
+        }
+        select{
+            width: 15%;
+            height: 25px;
+            margin-left: 25%;
+            background-color:white;
+        }
+        input{
+            background-color:white;
+            height: 20px;
         }
