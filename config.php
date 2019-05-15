@@ -13,33 +13,19 @@ include_once 'dao/clsConexao.php';
         <script src="jquery-3.3.1.js"></script>
     <h1  class="titulo">Configurações</h1>
 </head>
-<body class="bodyFundoMadeira">
+<body>
 
-
+   
     <div style="text-align: center;">
         <div><label>Selecionar Mesa</label></div>
-        <div><select></select></div>
+        <div><select name="mesa">
+             <option value="0">Selecione...</option>
+             <option value >teste<option>
+            </select></div>
     </div>
     
-     <label>Mesa </label>
-            <select name="mesa" >
-                <option value="0"  >Selecione...</option>
-                <?php
-                    $lista = MesaDAO::getMesas();
-                    
-                    foreach ($lista as $mes){
-                        $selecionar = "";
-                        if( $idMesa == $mes->getId() ){
-                            $selecionar = " selected ";
-                        }
-                        
-                        echo '<option '.$selecionar.' value="'.$mes->getId().'" >'.
-                                $mes->getNome().'</option>';
-                    }
-                ?>
-                
-            </select>
-
+    
+     
 
     <div style="margin-top:2%; margin-bottom: 2%;text-align: center">
         <div><label>Trocar Senha</label></div>

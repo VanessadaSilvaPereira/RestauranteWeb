@@ -12,9 +12,14 @@ require './dao/clsConexao.php';
          <link href="CSS/Estilos.css" rel="stylesheet" type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     </head>
-    <body class="bodyFundoMadeira">
-        <?php
+    <body>
         
-        ?>
+        <form>
+            <div><label>Nome:</label></div>
+            <div><label>Descrição:</label></div>
+            <div><label>Preço:</label></div>
+            
+        </form>
+      
     </body>
 </html>
