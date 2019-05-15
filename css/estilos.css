@@ -1,8 +1,11 @@
 body{
-    margin: 0px;
+    margin: 0px;   
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 .bodyFundoMadeira{
-    /*background-color: red;*/
     background-image: url(../imagens/madeira.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -15,71 +18,75 @@ body{
     background-position: center;
     background-attachment:fixed;
 }
-  #button01{
-            width:100%;
-            height:800px;
-            border: none;
-            background-color: transparent;
-            color:white;
-            font-size:100px;
-            font-family: inherit;
-        }
-        #botaoConfig{
-         background-image: url(../imagens/gear.png);
-         width: 70px;
-         height:70px;
-         background-color: transparent;
-         background-repeat: no-repeat;
-         border:none;
-         margin: 5%;
-         float: right;
-        }
-        #divListaCategorias{
-             font-size: 30px;
-             color: white;
-             text-align: center;
-             margin: 2%;     
-        }
-        .limparFloat{
-            clear: both;
-        }
-        .titulo{
-            text-align: center;
-            font-size: 50px;
-        }
-        #botaoCadastro{
-            color: white;
-            font-size: 20px;
-            background-color: black;
-            padding: 0.5%;
-            border:none;
-            margin:1%;
-            border-radius: 10px;
-            float:right;
-             font-family:inherit;
-            margin-right: 25%;
-        }
-        label{
-            color:black;
-            font-size:25px;
-        }
-        select{
-            width: 15%;
-            height: 25px;
-            background-color:white;
-        }
-        input{
-            background-color:white;
-            height: 20px;
-        }
-        #btnSalvarCategoria{
-            background-image: url(../imagens/add.png);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 100%;
-            background-color: transparent;
-            border:none;
-            width:30px;
-            height:30px;
-        }
-        
+#button01{
+    width:100%;
+    height:800px;
+    border: none;
+    background-color: transparent;
+    color:white;
+    font-size:100px;
+    font-family: inherit;
+}
+#botaoConfig{
+    background-image: url(../imagens/gear.png);
+    width: 70px;
+    height:70px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border:none;
+    margin: 5%;
+    float: right;
+}
+#divListaCategorias{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin: 2%;     
+}
+.limparFloat{
+    clear: both;
+}
+.titulo{
+    text-align: center;
+    font-size: 50px;
+}
+#botaoCadastro, #btnSalvarProduto{
+    height: auto;
+    color: white;
+    font-size: 20px;
+    background-color: black;
+    padding: 0.5%;
+    border:none;
+    margin:1%;
+    border-radius: 10px;
+    float:right;
+    font-family:inherit;
+    margin-right: 25%;
+}
+
+
+label{
+    color:black;
+    font-size:20px;
+}
+select{
+    width: 15%;
+    height: 25px;
+    background-color:white;
+}
+input{
+    background-color:white;
+    height: 20px;
+}
+.btnAdd{
+    background-image: url(../imagens/add.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-color: transparent;
+    border:none;
+    width:30px;
+    height:30px;
+    position: absolute;
+    margin-left: 0.5%; 
+}

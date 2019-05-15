@@ -14,7 +14,7 @@ include_once 'dao/clsConexao.php';
          <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
          <script src="jquery-3.3.1.js"></script>
     </head>
-    <body class="bodyFundoMadeira">
+    <body>
         <?php
             $lista =CategoriaDAO::getCategorias();
             
@@ -26,7 +26,7 @@ include_once 'dao/clsConexao.php';
         <div id="divListaCategorias">
             <?php 
                 foreach ($lista as $categoria) {
-                    echo '<a href="listaOngredientes.php">'.$categoria->getNome().'<a>'.'<br>';            
+                    echo '<a href="listaProdutos.php">'.$categoria->getNome().'<a>'.'<br>';            
                 }
             ?>
         </div>
