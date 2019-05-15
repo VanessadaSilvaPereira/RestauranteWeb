@@ -12,11 +12,10 @@ include_once 'dao/clsConexao.php';
         <title>Menu</title>
         <link href="CSS/Estilos.css" rel="stylesheet" type="text/css">
          <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+         <script src="jquery-3.3.1.js"></script>
     </head>
     <body class="bodyFundoMadeira">
         <?php
-            require_once 'menu.php';
-            
             $lista =CategoriaDAO::getCategorias();
             
             if ( $lista->count()==0){
@@ -36,8 +35,15 @@ include_once 'dao/clsConexao.php';
           }
         ?>
         
-        <a id="botaoConfig" href="config.php"></a>
+        <a id="botaoConfig" href="config.php" ></a>
+        
         <div class="limparFloat"></div>
         
     </body>
+    <script>
+       
+//        function aletraSenha() {
+//    alert(document.write(teste););
+
+    </script>
 </html>

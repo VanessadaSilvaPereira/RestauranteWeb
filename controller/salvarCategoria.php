@@ -6,7 +6,7 @@ include_once '../dao/clsConexao.php';
 if( isset( $_REQUEST['inserir'] ) ){
     $categoria = new Categoria();
     $categoria->setNome( $_POST['txtNome']  );
-    
+
     CategoriaDAO::inserir($categoria);
     
     header("Location: ../menu.php");
@@ -21,7 +21,7 @@ if( isset($_REQUEST['excluir'])){
     echo '<a href="../config.php" ><button>NÃO</button></a>';
 }
 if( isset( $_REQUEST['confirmaExcluir'] ) ){
-    $id = $_REQUEST['idCidade'];
+    $id = $_REQUEST['idCategoria'];
     CategoriaDAO::excluir($id);
     header("Location: ../config.php");
 }

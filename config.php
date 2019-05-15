@@ -10,6 +10,7 @@ include_once 'dao/clsConexao.php';
         <title>Configurações</title>
         <link href="CSS/Estilos.css" rel="stylesheet" type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <script src="jquery-3.3.1.js"></script>
     <h1  class="titulo">Configurações</h1>
 </head>
 <body class="bodyFundoMadeira">
@@ -19,9 +20,28 @@ include_once 'dao/clsConexao.php';
         <div><label>Selecionar Mesa</label></div>
         <div><select></select></div>
     </div>
+    
+     <label>Mesa </label>
+            <select name="mesa" >
+                <option value="0"  >Selecione...</option>
+                <?php
+                    $lista = MesaDAO::getMesas();
+                    
+                    foreach ($lista as $mes){
+                        $selecionar = "";
+                        if( $idMesa == $mes->getId() ){
+                            $selecionar = " selected ";
+                        }
+                        
+                        echo '<option '.$selecionar.' value="'.$mes->getId().'" >'.
+                                $mes->getNome().'</option>';
+                    }
+                ?>
+                
+            </select>
 
 
-    <div style="margin-top:5%; margin-bottom: 5%; border: solid black 2px;text-align: center">
+    <div style="margin-top:2%; margin-bottom: 2%;text-align: center">
         <div><label>Trocar Senha</label></div>
         <div><label>Senha atual:</label>
             <input type="text"></div>
@@ -29,18 +49,17 @@ include_once 'dao/clsConexao.php';
         <input type="text">
     </div>
 
-    <div style="text-align: center;">
-        <form action="controller/salvarCategoria.php?inserir" method="POST">
-            <label>Cadastrar Categoria:</label>
-            <input type="text" name="txtNome">
-        <input type="submit" value="Salvar">
-        
-        </form>
-    </div>
+
+    <form action="controller/salvarCategoria.php?inserir" method="POST">
+        <div style="text-align: center;">
+            <label>Cadastrar Categoria</label>
+            <input id="inputNomeCategoria" type="text" name="txtNome">
+            <input id="btnSalvarCategoria"type="submit" value="">
+
+        </div>
+    </form>
+    
 </div>
-
-
-
 
 <button id="botaoCadastro" onclick="window.location = 'cadastroProduto.php'" >Cadastrar Produto</button>
 </body>

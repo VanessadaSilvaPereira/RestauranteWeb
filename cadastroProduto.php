@@ -14,7 +14,7 @@ require './dao/clsConexao.php';
     </head>
     <body class="bodyFundoMadeira">
         <?php
-        // put your code here
+        
         ?>
     </body>
 </html>

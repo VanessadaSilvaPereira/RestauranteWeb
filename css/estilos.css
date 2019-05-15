@@ -6,13 +6,14 @@ body{
     background-image: url(../imagens/madeira.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-attachment: inherit;
+    background-attachment:fixed;
 }
 #bodyIndex{
     background-image: url(../imagens/salada2.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-attachment: inherit;
+    background-position: center;
+    background-attachment:fixed;
 }
   #button01{
             width:100%;
@@ -20,7 +21,7 @@ body{
             border: none;
             background-color: transparent;
             color:white;
-            font-size:150px;
+            font-size:100px;
             font-family: inherit;
         }
         #botaoConfig{
@@ -34,7 +35,7 @@ body{
          float: right;
         }
         #divListaCategorias{
-             font-size: 75px;
+             font-size: 30px;
              color: white;
              text-align: center;
              margin: 2%;     
@@ -71,3 +72,14 @@ body{
             background-color:white;
             height: 20px;
         }
+        #btnSalvarCategoria{
+            background-image: url(../imagens/add.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            background-color: transparent;
+            border:none;
+            width:30px;
+            height:30px;
+        }
+        
