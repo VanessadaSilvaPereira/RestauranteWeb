@@ -26,7 +26,7 @@ include_once 'dao/clsConexao.php';
         <div id="divListaCategorias">
             <?php 
                 foreach ($lista as $categoria) {
-                    echo $categoria->getNome().'<br>';            
+                    echo '<a href="listaOngredientes.php">'.$categoria->getNome().'<a>'.'<br>';            
                 }
             ?>
         </div>
@@ -41,9 +41,6 @@ include_once 'dao/clsConexao.php';
         
     </body>
     <script>
-       
-//        function aletraSenha() {
-//    alert(document.write(teste););
 
     </script>
 </html>
