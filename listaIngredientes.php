@@ -22,11 +22,10 @@ require './model/clsIngrediente.php';
                 echo '<h2><b>Nenhum Ingrediente cadastrado</b></h2>';
             }else {
         ?>
-        
         <div id="divListaIngrediente">
             <?php 
                 foreach ($lista as $ingrediente) {
-                    echo '<div id="ingrediente"><input type="checkbox" value="" />'.$ingrediente->getNome().'</div>';            
+                    echo '<div><input type="checkbox" value="" id="ingrediente" />'.$ingrediente->getNome().'</div>';            
                 }
             ?>
         </div>
@@ -34,6 +33,6 @@ require './model/clsIngrediente.php';
         <?php
           }
         ?>
-        <button>ok</button>
+        <button class="botao">ok</button>
     </body>
 </html>

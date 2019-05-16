@@ -18,7 +18,7 @@ require './dao/clsConexao.php';
     <div style="width: 30%; height:100%; margin-left: 30%;">
 
         <div>
-            <button style="float: right" id="botaoCadastro" onclick="window.location = 'listaIngredientes.php'">Ingredientes</button>
+            <button class="botao" onclick="window.location = 'listaIngredientes.php'">Ingredientes</button>
         </div>
         <div class="limparFloat"></div>
         <form>
@@ -64,7 +64,7 @@ require './dao/clsConexao.php';
 
 
                     <div style="float: right">
-                        <input id="btnSalvarProduto" type="submit" value="Salvar">
+                        <input class="botao" type="submit" value="Salvar">
                     </div>
                     </form>
                 </div>

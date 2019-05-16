@@ -73,7 +73,7 @@ include_once 'model/clsStatus.php';
 </form>
 
                
-                <button id="botaoCadastro" style="float: right" onclick="window.location = 'cadastroProduto.php'">
+            <button class="botao" onclick="window.location = 'cadastroProduto.php'">
                     Cadastrar Produto
                 </button>
         </div>

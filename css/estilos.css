@@ -51,7 +51,7 @@ a{
     text-align: center;
     font-size: 50px;
 }
-#botaoCadastro, #btnSalvarProduto{
+.botao{
     height: auto;
     color: white;
     font-size: 20px;
@@ -59,7 +59,7 @@ a{
     padding: 0.5%;
     border:none;
     margin:1%;
-    border-radius: 10px;
+    border-radius: 5px;
     float:right;
     font-family:inherit;
     margin-right: 25%;
@@ -91,15 +91,11 @@ input{
     position: absolute;
     margin-left: 0.5%; 
 }
-#divListaIngrediente{
-    font-size: 16px;
-    
+#ingrediente {
+    font-size: 20px;
+    border: 2px solid black;
+    height: auto;
+    vertical-align:central;
+        
 }
-#ingrediente{   
-    /*text-align: center;*/
-/*     border: solid black 2px;*/
-  height: auto;
-}
-input checkbox{
-    color:red;
-}
+
