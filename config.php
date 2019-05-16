@@ -3,8 +3,10 @@
 include_once 'model/clsCategoria.php';
 include_once 'dao/clsCategoriaDAO.php';
 include_once 'dao/clsConexao.php';
-include_once './dao/clsMesaDAO.php';
-include_once './model/clsMesa.php';
+include_once 'dao/clsMesaDAO.php';
+include_once 'model/clsMesa.php';
+include_once 'dao/clsStatusDAO.php';
+include_once 'model/clsStatus.php';
 ?>
 <html>
     <head>
@@ -16,69 +18,65 @@ include_once './model/clsMesa.php';
     <h1  class="titulo">Configurações</h1>
 </head>
 <body>
+    <div style="width: 30%; height:100%; margin-left: 35%;">
 
-
-    <div style="text-align: center">
-
-        <div style="margin-bottom: 1%"> <div><label>Selecionar Mesa</label></div>
-            <div><select name="mesa">
-                    <option value="0">Selecione...</option>
+        <div style="margin: 1%;text-align: center;"> <div><label>Selecionar Mesa</label></div>
+            <div style="width:100%"><select name="mesa">
+                    <option  value="0">Selecione...</option>
                     <?php
                     $lista = MesaDAO::getMesas();
-
                     foreach ($lista as $mes) {
                         $selecionar = "";
                         if ($idMesa == $mes->getId()) {
                             $selecionar = " selected ";
                         }
-
-                        echo '<option ' . $selecionar . ' value="' . $mes->getId() . '" >' .
+                        echo '<option ' . $selecionar . 'value="' . $mes->getId() . '" >' .
                         $mes->getNome() . '</option>';
                     }
                     ?>
                 </select></div></div>
 
-
-
-
-
-
-        <div style="margin-bottom: 2%">
+        <div style="margin: 1%">
             <div><label>Trocar Senha</label></div>
             <div>
                 <label>Senha atual:</label>
-                <input type="text">
+                <input style="margin-left: 1.5%" type="text">
             </div>
             <label>Nova Senha:</label>
             <input type="text">
         </div>
 
-        <div style="margin-bottom: 1%">
+
+        <div style="margin: 2%">
             <form action="controller/salvarCategoria.php?inserir" method="POST">
-                <label>Cadastrar Categoria</label>
+                <div><label>Cadastrar Categoria</label></div>
                 <input id="inputNomeCategoria" type="text" name="txtNome">
                 <input class="btnAdd"type="submit" value="">
-            </form></div>
+            </form>
 
-        <div style="margin-bottom: 1%">
-        <form action="controller/salvarIngrediente.php?inserir" method="POST">
-            <label>Cadastrar Ingrediente</label>
-            <input id="inputNomeIngrediente" type="text" name="txtNome">
-            <input class="btnAdd"type="submit" value="">
-        </form>
+            <form action="controller/salvarIngrediente.php?inserir" method="POST">
+                <div><label>Cadastrar Ingrediente</label></div>
+                <input id="inputNomeIngrediente" type="text" name="txtNome">
+                <input class="btnAdd"type="submit" value="">
+            </form>
+
+            <form action="controller/salvarMesa.php?inserir" method="POST">
+                <div><label>Cadastrar Mesa</label></div>
+                <input id="inputNomeMesa" type="text" name="txtNome">
+                <input class="btnAdd"type="submit" value="">
+ </form>
+                <form action="controller/salvarStatus.php?inserir" method="POST">
+                    <div><label>Cadastrar Status</label></div>
+                    <input id="inputNomeStatus" type="text" name="txtNome">
+                    <input class="btnAdd"type="submit" value="">
+                    </div>
+</form>
+
+               
+                <button id="botaoCadastro" style="float: right" onclick="window.location = 'cadastroProduto.php'">
+                    Cadastrar Produto
+                </button>
         </div>
 
-        <div style="margin-bottom: 1%">
-        <form action="controller/salvarMesa.php?inserir" method="POST">
-            <label>Cadastrar Mesa</label>
-            <input id="inputNomeMesa" type="text" name="txtNome">
-            <input class="btnAdd"type="submit" value="">
-            </div>
-        </form>
-        </div>
-
-    </div>
-
-    <button id="botaoCadastro" onclick="window.location = 'cadastroProduto.php'" >Cadastrar Produto</button>
 </body>
 </html>

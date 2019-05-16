@@ -35,12 +35,25 @@ include_once 'dao/clsConexao.php';
           }
         ?>
         
-        <a id="botaoConfig" href="config.php" ></a>
+        <a id="botaoConfig" href="config.php" onclick="teste()" ></a>
         
         <div class="limparFloat"></div>
         
     </body>
     <script>
+
+    function teste() {
+        var senha;
+        
+// alert("Digite a senha de Administrador!");
+ senha = prompt("Digite a senha de administrador");
+ 
+ if(senha === 123456){
+     window.location("config.php");
+ }else{
+     window.location("menu.php");
+ }
+}
 
     </script>
 </html>

@@ -34,6 +34,6 @@ require './model/clsIngrediente.php';
         <?php
           }
         ?>
-        
+        <button>ok</button>
     </body>
 </html>

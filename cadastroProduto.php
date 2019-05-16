@@ -10,54 +10,64 @@ require './dao/clsConexao.php';
         <title>Cadastro</title>
         <link href="CSS/Estilos.css" rel="stylesheet" type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    </head>
-    <body>
-        <h1 class="titulo">Cadastro de Produto</h1>
 
-        <div style="text-align:center">
-            <form>
-                <div style="margin-bottom: 1%;">
-                    <div><label>Nome:</label></div>
-                    <div><input type="text"></div>
-                </div>
+    <h1 class="titulo">Cadastro de Produto</h1>
+</head>
+<body>
 
-                <div style="margin-bottom: 1%;">
-                    <div><label>Foto:</label></div>
-                    <div><input type="file"></div>
-                </div>
+    <div style="width: 30%; height:100%; margin-left: 30%;">
 
-                <div style="margin-bottom: 1%;">
-                    <div><label>Descrição:</label></div>
-                    <div><input type="text" style="height:100px;width: 300px"></div>
-                </div>
-
-                <div style=" margin-bottom: 1%">
-                    <div><label>Preço:</label></div>
-                    <div><input type="text"></div>
-                </div>
-
-                <div  style="text-align: center"><input id="btnSalvarProduto" type="submit" value="Salvar"></div>
-            </form>
-             <div style="text-align: center">
-
-        <div style="margin-bottom: 1%"> <div><label>Selecionar Categoria</label></div>
-            <div><select name="Categoria">
-                    <option value="0">Selecione...</option>
-                    <?php
-                    $lista = CategoriaDAO::getCategorias();
-
-                    foreach ($lista as $cat) {
-                        $selecionar = "";
-                        if ($idCategoria == $cat->getId()) {
-                            $selecionar = " selected ";
-                        }
-                        echo '<option ' . $selecionar . ' value="' . $cat->getId() . '" >' .
-                        $cat->getNome() . '</option>';
-                    }
-                    ?>
-                </select></div></div>
-
+        <div>
+            <button style="float: right" id="botaoCadastro" onclick="window.location = 'listaIngredientes.php'">Ingredientes</button>
         </div>
+        <div class="limparFloat"></div>
+        <form>
+            <div style="margin: 1%;">
+                
+                <div>
+                    <div><label>Foto:</label></div>
+                    <div style="width: 100px; height: 100px; border: solid black 2px">
+                        <div style="margin-left:120px "><input type="file"></div>
+                    </div>
 
-    </body>
-</html>
+                    <div style="margin-left: 120px; margin-top: -50px">
+                        <div><label>Nome:</label></div>
+                        <div><input type="text"></div>
+                    </div>
+
+                    <div style="margin: 1%;">
+                        <div><label>Descrição:</label></div>
+                        <div><input type="text"></div>
+                    </div>
+
+                    <div style=" margin: 1%;">
+                        <div><label>Preço:</label></div>
+                        <div><input type="text"></div>
+                    </div>
+
+                    <div style="margin: 1%;">
+                        <div><label>Selecionar Categoria</label></div>
+                        <div><select style="width: 50%" name="Categoria">
+                                <option  value="0">Selecione...</option>
+                                <?php
+                                $lista = CategoriaDAO::getCategorias();
+                                foreach ($lista as $cat) {
+                                    $selecionar = "";
+                                    if ($idCategoria == $cat->getId()) {
+                                        $selecionar = " selected ";
+                                    }
+                                    echo '<option ' . $selecionar . 'value="' . $cat->getId() . '" >' .
+                                    $cat->getNome() . '</option>';
+                                }
+                                ?>
+                            </select></div></div>
+
+
+                    <div style="float: right">
+                        <input id="btnSalvarProduto" type="submit" value="Salvar">
+                    </div>
+                    </form>
+                </div>
+
+                </body>
+                </html>
