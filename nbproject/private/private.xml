@@ -3,20 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/Restaurante/config.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/listaProdutos.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/dao/clsMesaDAO.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/index.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/controller/salvarCategoria.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/controller/salvarMesa.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/Menu.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/dao/clsCategoriaDAO.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/listaIngredientes.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/css/estilos.css</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/cadastroProduto.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/dao/clsConexao.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/model/clsCategoria.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/model/clsMesa.php</file>
+            <file>file:/C:/xampp/htdocs/RestauranteWeb/cadastroProduto.php</file>
+            <file>file:/C:/xampp/htdocs/RestauranteWeb/index.php</file>
+            <file>file:/C:/xampp/htdocs/RestauranteWeb/Menu.php</file>
+            <file>file:/C:/xampp/htdocs/RestauranteWeb/dao/clsMesaDAO.php</file>
+            <file>file:/C:/xampp/htdocs/RestauranteWeb/listaIngredientes.php</file>
+            <file>file:/C:/xampp/htdocs/RestauranteWeb/css/estilos.css</file>
+            <file>file:/C:/xampp/htdocs/RestauranteWeb/config.php</file>
+            <file>file:/C:/xampp/htdocs/RestauranteWeb/dao/clsConexao.php</file>
         </group>
     </open-files>
 </project-private>

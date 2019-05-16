@@ -90,3 +90,15 @@ input{
     position: absolute;
     margin-left: 0.5%; 
 }
+#divListaIngrediente{
+    font-size: 16px;
+    
+}
+#ingrediente{   
+    /*text-align: center;*/
+/*     border: solid black 2px;*/
+  height: auto;
+}
+input checkbox{
+    color:red;
+}
