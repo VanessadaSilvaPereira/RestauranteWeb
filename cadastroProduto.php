@@ -23,7 +23,7 @@ require './dao/clsConexao.php';
         <div class="limparFloat"></div>
         <form>
             <div style="margin: 1%;">
-                
+                <!--fazer uma função javascript para contar os caracteres -->
                 <div>
                     <div><label>Foto:</label></div>
                     <div style="width: 100px; height: 100px; border: solid black 2px">
@@ -32,17 +32,17 @@ require './dao/clsConexao.php';
 
                     <div style="margin-left: 120px; margin-top: -50px">
                         <div><label>Nome:</label></div>
-                        <div><input type="text"></div>
+                        <div><input type="text" name="txtNome" value="" required maxlength="100"></div>
                     </div>
 
                     <div style="margin: 1%;">
                         <div><label>Descrição:</label></div>
-                        <div><input type="text"></div>
+                        <div><input type="text" name="txtDescricao" value="" required maxlength="100"></div>
                     </div>
 
                     <div style=" margin: 1%;">
                         <div><label>Preço:</label></div>
-                        <div><input type="text"></div>
+                        <div><input type="text" name="txtPreco" value="" required maxlength="100"></div>
                     </div>
 
                     <div style="margin: 1%;">

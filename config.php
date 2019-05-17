@@ -50,24 +50,24 @@ include_once 'model/clsStatus.php';
         <div style="margin: 2%">
             <form action="controller/salvarCategoria.php?inserir" method="POST">
                 <div><label>Cadastrar Categoria</label></div>
-                <input id="inputNomeCategoria" type="text" name="txtNome">
+                <input id="inputNomeCategoria" type="text" name="txtCategoria" value="" required maxlength="100">
                 <input class="btnAdd"type="submit" value="">
             </form>
 
             <form action="controller/salvarIngrediente.php?inserir" method="POST">
                 <div><label>Cadastrar Ingrediente</label></div>
-                <input id="inputNomeIngrediente" type="text" name="txtNome">
+                <input id="inputNomeIngrediente" type="text" name="txtIngrediente" value=""  required maxlength="100">
                 <input class="btnAdd"type="submit" value="">
             </form>
 
             <form action="controller/salvarMesa.php?inserir" method="POST">
                 <div><label>Cadastrar Mesa</label></div>
-                <input id="inputNomeMesa" type="text" name="txtNome">
+                <input id="inputNomeMesa" type="text" name="txtMesa" value=""  required maxlength="100">
                 <input class="btnAdd"type="submit" value="">
  </form>
                 <form action="controller/salvarStatus.php?inserir" method="POST">
                     <div><label>Cadastrar Status</label></div>
-                    <input id="inputNomeStatus" type="text" name="txtNome">
+                    <input id="inputNomeStatus" type="text" name="txtNome" value=""  required maxlength="100">
                     <input class="btnAdd"type="submit" value="">
                     </div>
 </form>
