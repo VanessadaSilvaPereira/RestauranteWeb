@@ -5,7 +5,7 @@ include_once '../dao/clsConexao.php';
 
 if( isset( $_REQUEST['inserir'] ) ){
     $ingrediente = new Ingrediente();
-    $ingrediente->setNome( $_POST['txtNome']  );
+    $ingrediente->setNome( $_POST['txtIngrediente']  );
 
     IngredienteDAO::inserir($ingrediente);
     
