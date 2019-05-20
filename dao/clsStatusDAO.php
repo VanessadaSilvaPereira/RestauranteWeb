@@ -8,7 +8,6 @@ class StatusDAO {
               
         
         Conexao::executar($sql);
-        
     }
    
     public static function getStatus() {

@@ -67,12 +67,11 @@ include_once 'model/clsStatus.php';
  </form>
                 <form action="controller/salvarStatus.php?inserir" method="POST">
                     <div><label>Cadastrar Status</label></div>
-                    <input id="inputNomeStatus" type="text" name="txtNome" value=""  required maxlength="100">
+                    <input id="inputNomeStatus" type="text" name="txtStatus" value=""  required maxlength="100">
                     <input class="btnAdd"type="submit" value="">
                     </div>
 </form>
 
-               
             <button class="botao" onclick="window.location = 'cadastroProduto.php'">
                     Cadastrar Produto
                 </button>

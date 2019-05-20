@@ -45,7 +45,6 @@ include_once 'dao/clsConexao.php';
     function teste() {
         var senha;
         
-// alert("Digite a senha de Administrador!");
  senha = prompt("Digite a senha de administrador");
  
  if(senha === 123456){
@@ -54,6 +53,5 @@ include_once 'dao/clsConexao.php';
      window.location("menu.php");
  }
 }
-
     </script>
 </html>

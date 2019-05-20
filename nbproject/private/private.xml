@@ -2,28 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/xampp/htdocs/Restaurante/config.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/listaProdutos.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/dao/clsMesaDAO.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/index.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/controller/salvarCategoria.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/model/clsIngrediente.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/controller/salvarMesa.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/controller/salvarIngrediente.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/Menu.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/dao/clsStatusDAO.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/dao/clsCategoriaDAO.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/listaIngredientes.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/css/estilos.css</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/dao/clsIngredienteDAO.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/jquery-3.3.1.js</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/cadastroProduto.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/model/clsStatus.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/controller/salvarStatus.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/dao/clsConexao.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/model/clsCategoria.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/model/clsMesa.php</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
