@@ -18,11 +18,12 @@ class ProdutoDAO {
 
         $lista = new ArrayObject();
         if ($result != NULL) {
-            while (list($_id, $_nome, $_preco, $_descricao) = mysqli_fetch_row($result)) {
+            while (list($_id, $_nome,$_foto, $_preco, $_descricao) = mysqli_fetch_row($result)) {
 
                 $produto = new Produto();
                 $produto->setId($_id);
                 $produto->setNome($_nome);
+//                $produto->setFoto($_foto);
                 $produto->setPreco($_preco);
                 $produto->setDescricao($_descricao);
                 $lista->append($produto);

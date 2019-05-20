@@ -98,5 +98,13 @@ input{
 }
 #divIngredientes{
     float: right;
+    width:150px;
+    height:150px;
+    overflow: scroll;
+    padding: 1%;
 }
+#divIngredientes input:checked{
+    color:red;
+}
+
 

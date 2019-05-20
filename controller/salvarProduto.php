@@ -17,8 +17,8 @@ $cat->setId( $_POST['categoria']);
 $produto->setCategoria( $cat );
 
 $produto->setFoto( salvarFoto() );
-ProdutoDAO::inserir($produto);
 
+ProdutoDAO::inserir($produto);
 header("Location: ../cadastroProduto.php");
 }
 
@@ -34,13 +34,11 @@ if(!move_uploaded_file( $_FILES['foto']['tmp_name'],
  $caminho ) ){
 $nome_arquivo = "sem_foto.png";
 }
-
 } else {
 $nome_arquivo = "sem_foto.png";
 }
 return $nome_arquivo;
 }
-
 
 if (isset($_REQUEST['excluir'])) {
 $id = $_REQUEST['idProduto'];

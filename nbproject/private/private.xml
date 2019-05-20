@@ -2,6 +2,23 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/xampp/htdocs/Restaurante/listaProdutos.php</file>
+            <file>file:/C:/xampp/htdocs/Restaurante/dao/clsMesaDAO.php</file>
+            <file>file:/C:/xampp/htdocs/Restaurante/controller/salvarMesa.php</file>
+            <file>file:/C:/xampp/htdocs/Restaurante/controller/salvarIngrediente.php</file>
+            <file>file:/C:/xampp/htdocs/Restaurante/dao/clsStatusDAO.php</file>
+            <file>file:/C:/xampp/htdocs/Restaurante/dao/clsProdutoDAO.php</file>
+            <file>file:/C:/xampp/htdocs/Restaurante/controller/salvarProduto.php</file>
+            <file>file:/C:/xampp/htdocs/Restaurante/dao/clsCategoriaDAO.php</file>
+            <file>file:/C:/xampp/htdocs/Restaurante/fotos_produtos/20190521002752IMG-20171105-WA0003.jpg</file>
+            <file>file:/C:/xampp/htdocs/Restaurante/css/estilos.css</file>
+            <file>file:/C:/xampp/htdocs/Restaurante/cadastroProduto.php</file>
+            <file>file:/C:/xampp/htdocs/Restaurante/model/clsProduto.php</file>
+            <file>file:/C:/xampp/htdocs/Restaurante/model/clsStatus.php</file>
+            <file>file:/C:/xampp/htdocs/Restaurante/controller/salvarStatus.php</file>
+            <file>file:/C:/xampp/htdocs/Restaurante/fotos_produtos/sem_foto.png</file>
+            <file>file:/C:/xampp/htdocs/Restaurante/fotos_produtos/sem_foto.jpg</file>
+        </group>
     </open-files>
 </project-private>
