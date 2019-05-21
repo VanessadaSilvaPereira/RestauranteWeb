@@ -18,27 +18,24 @@ include './model/clsProduto.php';
                 echo '<h2><b>Nenhum Produto cadastrado</b></h2>';
             } else {
                 foreach ($listaPro as $produto) {
-                    
-                  $preco = str_replace(",", ".", $produto->getPreco());
+
+//                  $preco = str_replace(",", ".", $produto->getPreco());
                     echo
 
-                    '<div style="clear:both;border:solid black 2px">
-                        <div style="float:left; border:solid black 2px">
-                        <img src="../fotos_produtos/' . $produto->getFoto() . '" width="100px height="100px" />
+                    '<div style="clear:both;">
+                        
+                        <div id="divFoto" style="float:left">
+                        <img src="fotos_produtos/' . $produto->getFoto() . '"width="150px height="100px" />
                         </div>'
-                        . '<div style=float:left>'
-                        . '<div>'
-                        . $produto->getNome()
-                        . '</div>'
-                        . '<div>'
-                        . $produto->getDescricao()
-                        . '</div>'
-                        . '<div>'
-                        . 'R$' . $preco
-                        . '</div>'
-                        .'<div style="float:right"><a href="listaIngredientes.php">Ingredientes</a></div>'
-                        . '</div>'
-                  . '</div>'
+                            
+                    . '<div style="float:left;margin:3%">'
+                    . '<div>' . $produto->getNome() . '</div>'
+                    . '<div>' . $produto->getDescricao() . '</div>'
+                    . '<div>R$ ' . $produto->getPreco() . '</div>'
+                            
+                    . '</div>'
+                    . '<div style="float:right"><a href="listaIngredientes.php">Ingredientes</a></div>'
+                    . '</div>'
                     ;
                 }
             }

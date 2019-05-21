@@ -20,9 +20,7 @@ require './dao/clsConexao.php';
     <div style="width: 60%; height:100%; margin-left:20%;">
         <form enctype="multipart/form-data" action="controller/salvarProduto.php?inserir" method="POST">
             
-            <?php
-            $foto = "sem_foto.png";
-            ?>
+            <!--$foto = "sem_foto.png";-->
            <div id="div01Pro">
 
                 <div style="margin: 1%;">

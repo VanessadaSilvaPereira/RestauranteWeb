@@ -13,7 +13,7 @@ class ProdutoDAO {
         Conexao::executar($sql);
     }
     public static function getProdutos() {
-        $sql = "SELECT * FROM produtos";
+        $sql = "SELECT id, nome,foto, preco,descricao FROM produtos";
         $result = Conexao::consultar($sql);
 
         $lista = new ArrayObject();
@@ -23,7 +23,7 @@ class ProdutoDAO {
                 $produto = new Produto();
                 $produto->setId($_id);
                 $produto->setNome($_nome);
-//                $produto->setFoto($_foto);
+                $produto->setFoto($_foto);
                 $produto->setPreco($_preco);
                 $produto->setDescricao($_descricao);
                 $lista->append($produto);
@@ -31,5 +31,5 @@ class ProdutoDAO {
         }
         return $lista;
     }
-
+    
 }

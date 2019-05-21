@@ -106,5 +106,10 @@ input{
 #divIngredientes input:checked{
     color:red;
 }
+#divFoto{
+   float:left;
+   margin-right:5%;
+   margin-bottom:2%;
+}
 
 

@@ -32,10 +32,10 @@ $diretorio = "../fotos_produtos/";
 $caminho = $diretorio.$nome_arquivo;
 if(!move_uploaded_file( $_FILES['foto']['tmp_name'],
  $caminho ) ){
-$nome_arquivo = "sem_foto.png";
+$nome_arquivo = "sem_foto.jpg";
 }
 } else {
-$nome_arquivo = "sem_foto.png";
+$nome_arquivo = "sem_foto.jpg";
 }
 return $nome_arquivo;
 }
