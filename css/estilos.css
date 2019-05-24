@@ -111,5 +111,25 @@ input{
    margin-right:5%;
    margin-bottom:2%;
 }
+/*---------------------index-------------------*/
+#divFormLogar{
+     background-color: white;
+     width: 25%;
+     border:solid black 2px;
+     padding: 2%;
+     margin-top: 10%;
+     margin-left: 35%;
+     height: auto;
+}
+#btnEntrar{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 1%;
+    font-family: inherit;
+    margin: 1%;
+    font-size: 18px;
+    height: auto;
+}
 
 

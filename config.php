@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+
+
+
+
 <?php
 include_once 'model/clsCategoria.php';
 include_once 'dao/clsCategoriaDAO.php';

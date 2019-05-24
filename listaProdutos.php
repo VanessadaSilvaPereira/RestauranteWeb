@@ -34,7 +34,7 @@ include './model/clsProduto.php';
                     . '<div>R$ ' . $produto->getPreco() . '</div>'
                             
                     . '</div>'
-                    . '<div style="float:right"><a href="listaIngredientes.php">Ingredientes</a></div>'
+                    . '<div style="float:right"><a href="ingredientesProdutos.php">Ingredientes</a></div>'
                     . '</div>'
                     ;
                 }
