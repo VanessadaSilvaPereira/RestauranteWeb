@@ -63,10 +63,11 @@ require './dao/clsConexao.php';
                                         ?>
                                     </select></div></div>
                             <div><input class="botao" type="submit" value="Salvar"></div>
+                             <a href="config.php"  ><div class="btnVoltar"></div></a>
 
                         </div>
                         <div id="divIngredientes" style="border: solid black 2px;float: right">
-                            <h3 style="text-align: center"><i>Ingredientes</i></h3>
+                            <h3 style="text-align: center">Ingredientes</h3>
                             <?php
                             $listaIng = IngredienteDAO::getIngredientes();
 
@@ -81,13 +82,18 @@ require './dao/clsConexao.php';
                                     . '</div>';
                                 }
                             }
-                            ?>
+                            ?>   
                         </div>
+                        
         </form>
  
                     </div>
+                      
                 </div>
+             
             </div>
+           
+    </div>
 
             </body>
             </html>

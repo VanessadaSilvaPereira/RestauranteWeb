@@ -78,6 +78,7 @@ include_once 'model/clsStatus.php';
             <button class="botao" onclick="window.location = 'cadastroProduto.php'">
                 Cadastrar Produto
             </button>
+            <a href="menu.php"  ><div class="btnVoltar"></div></a>
         </div>
 
 </body>

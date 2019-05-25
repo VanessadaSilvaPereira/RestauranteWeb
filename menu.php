@@ -47,7 +47,5 @@ include_once 'dao/clsConexao.php';
         ?>
 
     </body>
-    <script>
-
-    </script>
+    
 </html>

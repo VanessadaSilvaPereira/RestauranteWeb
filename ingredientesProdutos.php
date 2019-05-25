@@ -30,5 +30,6 @@
                 }
             }
         ?>
+        <a href="listaProdutos.php"  ><div class="btnVoltar"></div></a>
     </body>
 </html>
