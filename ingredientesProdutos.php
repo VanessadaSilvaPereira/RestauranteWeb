@@ -1,55 +1,34 @@
 <?php
-    include_once 'model/clsProduto.php';
-    include_once 'model/clsIngredientesProduto.php';
-    include_once 'dao/clsIngredienteProdutoDAO.php';
-    include_once 'dao/clsConexao.php';
+    include 'model/clsProduto.php';
+//    include 'model/clsIngredientesProduto.php.php';
+//    include 'dao/clsIngredienteProdutoDAO.php.php';
+    include'dao/clsConexao.php';
+    include './dao/clsIngredienteDAO.php';
+    include './model/clsIngrediente.php';
 ?>
-
 <!DOCTYPE html>
-
 <html>
     <head>
         <meta charset="UTF-8">
         <title></title>
     </head>
+    
     <body>
-        
         <h1 align="center">Ingredientes do Produto</h1>
-        <br><br><br>
-        <!--pedido->produto
-        item-ingredientesProduto
-        produto-ingrediente
-        -->
+        <link href="CSS/Estilos.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        
         <?php
-            $idProduto = $_REQUEST['idProduto'];
+
+        $idProduto = $_REQUEST['idProduto'];
             $lista = IngredienteProdutoDAO::getIngredientesProduto($idProduto);
-            
             if(count($lista) == 0 ){
                 echo '<h3>O produto não possui ingredientes!</h3>';
             } else {
-                echo '<table border="1"> ';
-                echo '  <tr> ';
-                echo '      <th>Código do Ingrediente</th> ';
-              
-                echo '      <th>Nome</th> ';
-             
-                echo '  </tr> ';
-                $total = 0;
-                foreach ($lista as $ingredientesProduto) {
-                    echo '<tr>';
-                    echo '  <td>'.$ingredientesProduto->getIngrediente()->getId().'</td>';
-                   
-                    echo '  <td>'.$ingredientesProduto->getNome().'</td>';
-                   
-                    
-                  
-                    echo '</tr>';  
+                foreach ($lista as $ingredientesProdutos) {
+                    $ingredientesProdutos->getIngrediente()->getNome();
                 }
-               
-                echo '</table> ';
             }
         ?>
-        
-        
     </body>
 </html>

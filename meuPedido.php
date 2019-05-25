@@ -7,10 +7,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <script src="jquery-3.3.1.js"></script>
     <h1  class="titulo">Meu Pedido</h1>
+    <link href="CSS/Estilos.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     </head>
-    <body>
-        <?php
-        ?>
+    <body style="background-image: url(imagens/madeira2.jpg)">
+        
         <form>
             <div><label>Observações:</label></div>
             <input type="text"> 

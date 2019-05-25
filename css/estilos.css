@@ -20,21 +20,24 @@ a{
 }
 #button01{
     width:100%;
-    height:800px;
+    height:100%;
     border: none;
     background-color: transparent;
     color:white;
     font-size:100px;
     font-family: inherit;
+    position:fixed;
+    /*background-color: red;*/
 }
 #botaoConfig{
     background-image: url(../imagens/gear.png);
-    width: 70px;
-    height:70px;
+    width: 50px;
+    height:50px;
     background-color: transparent;
     background-repeat: no-repeat;
+    background-size: 100%;
     border:none;
-    margin: 5%;
+    margin: 2%;
     float: right;
 }
 #divListaCategorias{
@@ -55,13 +58,11 @@ a{
     color: white;
     font-size: 20px;
     background-color: black;
-    padding: 0.5%;
+    padding:1%;
     border:none;
     margin:1%;
     border-radius: 5px;
-    float:right;
     font-family:inherit;
-    margin-right: 25%;
 }
 
 
@@ -85,8 +86,8 @@ input{
     background-size: 100%;
     background-color: transparent;
     border:none;
-    width:30px;
-    height:30px;
+    width:25px;
+    height:25px;
     position: absolute;
     margin-left: 0.5%; 
 }
@@ -98,10 +99,11 @@ input{
 }
 #divIngredientes{
     float: right;
-    width:150px;
-    height:150px;
+    width:30%;
+    height:200px;
     overflow: scroll;
     padding: 1%;
+    background-color:whitesmoke;
 }
 #divIngredientes input:checked{
     color:red;
@@ -114,22 +116,22 @@ input{
 /*---------------------index-------------------*/
 #divFormLogar{
      background-color: white;
-     width: 25%;
+     width:25%;
      border:solid black 2px;
      padding: 2%;
      margin-top: 10%;
      margin-left: 35%;
-     height: auto;
+     height:50%;
 }
-#btnEntrar{
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 1%;
-    font-family: inherit;
-    margin: 1%;
-    font-size: 18px;
-    height: auto;
+#divFormLogar input{
+    width: 100%
 }
 
+/*------------------*/
+#file{
+    background-color: transparent;
+}
+#divItem{
+    margin: 1%;
+}
 

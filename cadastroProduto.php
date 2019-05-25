@@ -16,7 +16,7 @@ require './dao/clsConexao.php';
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <h1 class="titulo">Cadastro de Produto</h1>
 </head>
-<body>
+<body style="background-image:url(imagens/madeira2.jpg)">
     <div style="width: 60%; height:100%; margin-left:20%;">
         <form enctype="multipart/form-data" action="controller/salvarProduto.php?inserir" method="POST">
             
@@ -33,7 +33,7 @@ require './dao/clsConexao.php';
 
                             <div style="margin: 1%;">
                                 <label>Foto:</label>
-                                <div><input type="file" name="foto"></div>
+                                <div><input id="file" type="file" name="foto"></div>
                             </div>
 
                             <div style="margin: 1%;">
@@ -83,12 +83,8 @@ require './dao/clsConexao.php';
                             }
                             ?>
                         </div>
-  
-            
         </form>
-        
-           
-                       
+ 
                     </div>
                 </div>
             </div>

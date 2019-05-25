@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 
-
-
-
 <?php
 include_once 'model/clsCategoria.php';
 include_once 'dao/clsCategoriaDAO.php';
@@ -19,13 +16,13 @@ include_once 'model/clsStatus.php';
         <link href="CSS/Estilos.css" rel="stylesheet" type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <script src="jquery-3.3.1.js"></script>
-    <h1  class="titulo">Configurações</h1>
+    <h1 class="titulo">Configurações</h1>
 </head>
-<body>
-    <div style="width: 30%; height:100%; margin-left: 35%;">
+<body style="background-image: url(imagens/madeira2.jpg)">
+    <div style=" height:100%; margin-left: 35%;">
 
-        <div style="margin: 1%;text-align: center;"> <div><label>Selecionar Mesa</label></div>
-            <div style="width:100%"><select name="mesa">
+        <div style="margin: 2%;"> <div><label>Selecionar Mesa</label></div>
+            <div><select name="mesa">
                     <option  value="0">Selecione...</option>
                     <?php
                     $lista = MesaDAO::getMesas();
@@ -38,17 +35,19 @@ include_once 'model/clsStatus.php';
                         $mes->getNome() . '</option>';
                     }
                     ?>
-                </select></div></div>
-
-        <div style="margin: 1%">
-            <div><label>Trocar Senha</label></div>
-            <div>
-                <label>Senha atual:</label>
-                <input style="margin-left: 1.5%" type="text">
+                </select>
             </div>
-            <label>Nova Senha:</label>
-            <input type="text">
         </div>
+
+        <!--        <div style="margin: 1%">
+                    <div><label>Trocar Senha</label></div>
+                    <div>
+                        <label>Senha atual:</label>
+                        <input style="margin-left: 1.5%" type="text">
+                    </div>
+                    <label>Nova Senha:</label>
+                    <input type="text">
+                </div>-->
 
 
         <div style="margin: 2%">
@@ -68,17 +67,17 @@ include_once 'model/clsStatus.php';
                 <div><label>Cadastrar Mesa</label></div>
                 <input id="inputNomeMesa" type="text" name="txtMesa" value=""  required maxlength="100">
                 <input class="btnAdd"type="submit" value="">
- </form>
-                <form action="controller/salvarStatus.php?inserir" method="POST">
-                    <div><label>Cadastrar Status</label></div>
-                    <input id="inputNomeStatus" type="text" name="txtStatus" value=""  required maxlength="100">
-                    <input class="btnAdd"type="submit" value="">
-                    </div>
-</form>
+            </form>
+            <form action="controller/salvarStatus.php?inserir" method="POST">
+                <div><label>Cadastrar Status</label></div>
+                <input id="inputNomeStatus" type="text" name="txtStatus" value=""  required maxlength="100">
+                <input class="btnAdd"type="submit" value="">
+                </div>
+            </form>
 
             <button class="botao" onclick="window.location = 'cadastroProduto.php'">
-                    Cadastrar Produto
-                </button>
+                Cadastrar Produto
+            </button>
         </div>
 
 </body>

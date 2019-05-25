@@ -4,7 +4,7 @@ class IngredienteProdutoDAO {
     
     
      public static function inserir( $ingredienteProduto ){
-        $sql = " INSERT INTO itens "
+        $sql = " INSERT INTO ingredientesProduto "
              . " (codProduto, codIngrediente,nome) "
              . " VALUES ( "
              . $ingredienteProduto->getProduto()->getId()  . " , "
@@ -21,8 +21,8 @@ class IngredienteProdutoDAO {
                 . " WHERE i.codProduto = " . $idProduto;
 //        echo $sql;
          
-        $result = Conexao::consultar($sql);
-//        Conexao::executar($sql);
+       $result = Conexao::consultar($sql);
+       Conexao::executar($sql);
         $lista = new ArrayObject();
         
     
