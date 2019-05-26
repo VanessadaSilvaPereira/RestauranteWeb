@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-
+<?php
+session_start();
+if($_SESSION['logado']&& $_SESSION['logado']==TRUE){
+?>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -12,4 +15,11 @@
         
         ?>
     </body>
+    
+    <?php
+}else{
+    header('location:index.php');
+}
+
+    ?>
 </html>

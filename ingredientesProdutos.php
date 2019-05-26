@@ -1,7 +1,8 @@
 <?php
+session_start();
+if (isset($_SESSION['logado']) && $_SESSION['logado'] == TRUE) {
+ 
     include 'model/clsProduto.php';
-//    include 'model/clsIngredientesProduto.php.php';
-//    include 'dao/clsIngredienteProdutoDAO.php.php';
     include'dao/clsConexao.php';
     include './dao/clsIngredienteDAO.php';
     include './model/clsIngrediente.php';
@@ -30,6 +31,11 @@
                 }
             }
         ?>
-        <a href="listaProdutos.php"  ><div class="btnVoltar"></div></a>
+        <a href="listaProdutos.php" ><div class="btnVoltar"></div></a>
     </body>
+    <?php
+} else {
+    header('location:index.php');
+}
+    ?>
 </html>

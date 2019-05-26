@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
     <?php
@@ -5,23 +6,25 @@
         session_start();
     }
     ?>
+    <link href="CSS/Estilos.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <head>
         <meta charset="UTF-8">
         <title>Restaurante</title>
-        <link href="CSS/Estilos.css" rel="stylesheet" type="text/css">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     </head>
+    
     <body id="bodyIndex">
         <?php
+        
         if (isset($_SESSION['logado']) && $_SESSION['logado'] == TRUE) {
             ?>
             <div>
                 <a href="menu.php"><button id="button01">Faça seu Pedido</button></a>
             </div>
-
             <?php
         } else {
             ?>
+        
             <div id="divFormLogar">
                 <form action="entrar.php" method="POST" >
                     <div><label>Login:</label></div>
@@ -31,12 +34,12 @@
                     <div><input type="submit" value="Entrar" class="botao"/></div>
                 </form>
             </div>
-    <?php
-    if (isset($_REQUEST['loginInvalido'])) {
-        echo '<h5>Login ou senha incorretos!</h5>';
-    }
-}
-?>
+            <?php
+            if (isset($_REQUEST['loginInvalido'])) {
+                echo '<h5>Login ou senha incorretos!</h5>';
+            }
+        }
+        ?>
     </body>
 
 </html>
