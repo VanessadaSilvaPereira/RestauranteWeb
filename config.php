@@ -23,13 +23,14 @@ if (isset($_SESSION['logado']) && $_SESSION['logado'] == TRUE) {
 
         <h1 class="titulo">Configurações</h1>
     </head>
-    <body style="background-image: url(imagens/madeira2.jpg)">
-        <div style=" height:auto; margin-left: 35%;">
+    <body>
+        <div style=" width:50% ;height:auto; margin-left: 25%;border: solid black 2px">
 
-            <div style="margin: 2%;"> <div><label>Selecionar Mesa</label></div>
+            <div style="margin: 2%;">
+                <label>Selecionar Mesa</label>
                 <div>
                     <select name="mesa">
-                        <option  value="0">Selecione...</option>
+                        <option  value="0">-</option>
                         <?php
                         $lista = MesaDAO::getMesas();
                         foreach ($lista as $mes) {
@@ -42,6 +43,7 @@ if (isset($_SESSION['logado']) && $_SESSION['logado'] == TRUE) {
                         }
                         ?>
                     </select>
+                    <input type="submit" value="ok" class="botao">
                 </div>
             </div>
             

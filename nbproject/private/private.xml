@@ -4,23 +4,26 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/xampp/htdocs/Restaurante/config.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/entrar.php</file>
             <file>file:/C:/xampp/htdocs/Restaurante/listaProdutos.php</file>
+            <file>file:/C:/xampp/htdocs/Restaurante/entrar.php</file>
             <file>file:/C:/xampp/htdocs/Restaurante/comanda.php</file>
             <file>file:/C:/xampp/htdocs/Restaurante/index.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/controller/salvarCategoria.php</file>
             <file>file:/C:/xampp/htdocs/Restaurante/dao/clsIngredienteProdutoDAO.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/controller/salvarMesa.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/controller/salvarIngrediente.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/controller/salvarProduto.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/css/estilos.css</file>
+            <file>file:/C:/xampp/htdocs/Restaurante/ingredientesProduto.php</file>
+            <file>file:/C:/xampp/htdocs/Restaurante/finalizarPedido.php</file>
+            <file>file:/C:/xampp/htdocs/Restaurante/model/clsItem.php</file>
+            <file>file:/C:/xampp/htdocs/Restaurante/model/clsIngredienteProduto.php</file>
+            <file>file:/C:/xampp/htdocs/Restaurante/dao/clsProdutoDAO.php</file>
+            <file>file:/C:/xampp/htdocs/Restaurante/sair.php</file>
+            <file>file:/C:/xampp/htdocs/Restaurante/itens.php</file>
             <file>file:/C:/xampp/htdocs/Restaurante/menu.php</file>
             <file>file:/C:/xampp/htdocs/Restaurante/dao/clsIngredienteDAO.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/cadastroProduto.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/controller/salvarStatus.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/ingredientesProdutos.php</file>
+            <file>file:/C:/xampp/htdocs/Restaurante/dao/clsItemDAO.php</file>
+            <file>file:/C:/xampp/htdocs/Restaurante/dao/clsConexao.php</file>
+            <file>file:/C:/xampp/htdocs/Restaurante/todosOsPedidos.php</file>
             <file>file:/C:/xampp/htdocs/Restaurante/meuPedido.php</file>
-            <file>file:/C:/xampp/htdocs/Restaurante/dao/clsUsuarioDAO.php</file>
+            <file>file:/C:/xampp/htdocs/Restaurante/model/clsCategoria.php</file>
+            <file>file:/C:/xampp/htdocs/Restaurante/dao/clsPedidoDAO.php</file>
         </group>
     </open-files>
 </project-private>

@@ -1,17 +1,16 @@
-body{
-    margin: 0px;
+body{    margin: 0px;
+background-image: url(../imagens/madeira2.jpg);
 }
+
 a{
     text-decoration: none;
     color: black;
 }
-.bodyFundoMadeira{
-    background-image: url(../imagens/madeira2.jpg);
-/*    background-repeat:no-repeat;
-    background-size: 100%;
-    background-position: center;
-    background-attachment:scroll;*/
+select{
+    width: 100%;
 }
+.bodyFundoMadeira{    background-image: url(../imagens/madeira2.jpg);}
+
 #bodyIndex{
     background-image: url(../imagens/salada2.jpg);
     background-repeat: no-repeat;
@@ -20,20 +19,15 @@ a{
     background-attachment:fixed;
 }
 #button01{
-    width:100%;
-    height:100%;
+    width:100%;    height:100%;
     border: none;
     background-color: transparent;
-    color:white;
-    font-size:100px;
-    font-family: inherit;
-    position:fixed;
-    /*background-color: red;*/
+    color:white;    font-size:100px;    
+    font-family: inherit;    position:fixed;
 }
 #botaoConfig{
     background-image: url(../imagens/gear.png);
-    width: 50px;
-    height:50px;
+    width: 50px;    height:50px;
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -42,10 +36,8 @@ a{
     float: right;
 }
 #divListaCategorias{
-    font-size: 30px;
-    color: white;
-    text-align: center;
-    margin: 2%;     
+    font-size: 30px;    color: white;
+    text-align: center;    margin: 2%;     
 }
 .limparFloat{
     clear: both;
@@ -59,14 +51,11 @@ a{
     color: white;
     font-size: 20px;
     background-color: black;
-    padding:5px;
-    border:none;
-    margin:5px;
-    border-radius: 5px;
+    padding:2px;    margin:5px;
+    border-radius: 3px;
     font-family:inherit;
+    border:none;
 }
-
-
 label{
     color:black;
     font-size:20px;
@@ -99,10 +88,8 @@ input{
     vertical-align:top;
 }
 #divIngredientes{
-    float: right;
-    width:30%;
-    height:200px;
-    overflow: scroll;
+   width:auto;
+    height:200px;    overflow: scroll;
     padding: 1%;
     background-color:whitesmoke;
 }
@@ -110,45 +97,60 @@ input{
     color:red;
 }
 #divFoto{
-   float:left;
-   margin-right:5%;
-   margin-bottom:2%;
+    float:left;    margin-right:2%;
+    margin-bottom:2%;    float:left;
+}
+#divFoto img{
+    height: 100%;
 }
 /*---------------------index-------------------*/
 #divFormLogar{
-     background-color: white;
-     width:25%;
-     border:solid black 2px;
-     padding: 2%;
-     margin-top: 10%;
-     margin-left: 35%;
-     height:50%;
+    background-color: white;
+    width:25%;    border:solid black 2px;
+    padding: 2%;    margin-top: 10%;
+    margin-left: 35%;    height:50%;
 }
 #divFormLogar input{
-    width: 100%
+    width: 100%;
 }
-
 /*------------------*/
 #file{
     background-color: transparent;
 }
 #divItem{
-    margin: 1%;
+    margin: 1%;    height:120px;
+    padding: 1%;
+}
+
+#divItem:hover{
+    background-color: whitesmoke;
+}
+#divNome{
+    font-size:20px;
 }
 #obs{
-    width:80%;
-    height: 100px;
-    margin-left: 10%;
-    position: relative;
+    width:80%;    height: 100px;
+    margin-left: 10%;    position: relative;
 }
 .btnVoltar{
     background-image: url(../imagens/voltar.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-    width: 40px;
-    height: 40px;
-    /*border: solid black 2px;*/
-    position:absolute
+    width: 40px;    height: 40px;
+    position:absolute;
 }
+#divIngrediente{
+    font-size: 20px;
+}
+#divListaIngredientesProdutos{
+    background-color: whitesmoke;
+    width: 45%;
+    margin-left: 25%;
+    padding: 1%;
+    text-align: center;
+    border-radius:15px;
+    
+}
+
 

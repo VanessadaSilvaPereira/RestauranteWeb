@@ -1,10 +1,9 @@
- <link href="CSS/Estilos.css" rel="stylesheet" type="text/css">
+<link href="CSS/Estilos.css" rel="stylesheet" type="text/css">
  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 <!DOCTYPE html>
 <?php
 session_start();
 if (isset($_SESSION['logado']) && $_SESSION['logado'] == TRUE) {
-
     require './model/clsProduto.php';
     require './model/clsCategoria.php';
     require './model/clsIngrediente.php';
@@ -20,16 +19,16 @@ if (isset($_SESSION['logado']) && $_SESSION['logado'] == TRUE) {
            
         </head>
         
-        <body style="background-image:url(imagens/madeira2.jpg)">
+        <body>
             <h1 class="titulo">Cadastro de Produto</h1>
 
-            <div style="width: 60%; height:100%; margin-left:20%;">
+            <div style="width: 50%; margin-left:25%;border: solid black 2px">
                 <form enctype="multipart/form-data" action="controller/salvarProduto.php?inserir" method="POST">
                     <div id="div01Pro">
 
                         <div style="margin: 1%;">
                             <div>
-                                <div style="float: left">
+                                <div>
                                     
                                     <div style="margin:1%;">
                                         <label>Nome:</label>
@@ -61,34 +60,26 @@ if (isset($_SESSION['logado']) && $_SESSION['logado'] == TRUE) {
 
                                     <div style="margin: 1%;">
                                         <label>Selecionar Categoria</label>
-                                        <div>
-                                            <select style="width: 50%" name="categoria" >
-                                                <option  value="0">Selecione...</option>
-                                                <?php
-                                                $listaCat = CategoriaDAO::getCategorias();
-                                                foreach ($listaCat as $cat) {
-                                                    $selecionar = "";
-                                                    if ($idCategoria == $cat->getId()) {
-                                                        $selecionar = " selected ";
-                                                    }
-                                                    echo '<option'.$selecionar.'value="'.$cat->getId().'" >' .
-                                                    $cat->getNome() . '</option>';
-                                                }
-                                                ?>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    
-                                    <div>
-                                        <input class="botao" type="submit" value="Salvar">
-                                    </div>
-                                    
-                                    <a href="config.php">
-                                        <div class="btnVoltar"></div>
-                                    </a>
-
-                                </div>
-                                <div id="divIngredientes" style="border: solid black 2px;float: right">
+            <div>
+                <select name="categoria" >
+                <option value="0"  >-</option>
+                <?php
+                    $lista = CategoriaDAO::getCategorias();
+                    
+                    foreach ($lista as $cat){
+                        $selecionar = "";
+                        if( $idCategoria == $cat->getId() ){
+                            $selecionar = " selected ";
+                        }
+                        
+                        echo '<option '.$selecionar.' value="'.$cat->getId().'" >'.
+                                $cat->getNome().'</option>';
+                    }
+                ?>
+                
+            </select>
+            </div>
+                                         <div id="divIngredientes" style="border: solid black 2px; margin-top: 1%">
                                     <h3 style="text-align: center">Ingredientes</h3>
                                     <?php
                                     $listaIng = IngredienteDAO::getIngredientes();
@@ -105,11 +96,25 @@ if (isset($_SESSION['logado']) && $_SESSION['logado'] == TRUE) {
                                     }
                                     ?>   
                                 </div>  
+                                        <div class="limparFloat"></div>
+                                    </div>
+                                    
+                                    <div>
+                                        <input class="botao" type="submit" value="Salvar">
+                                    </div>
+                                    
+                                    <a href="config.php">
+                                        <div class="btnVoltar"></div>
+                                    </a>
+
+                                </div>
+                               
                             </div>
                         </div>
                     </div>
-                </form>
+               </form>
             </div>
+             
             <?php
         } else {
             header('location: index.php');

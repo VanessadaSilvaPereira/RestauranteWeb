@@ -2,7 +2,7 @@
 
 class IngredienteProdutoDAO {
     
-    
+   //insert into ingredientes_produtos (codIngrediente, codProduto) VALUES(1 , 18)
      public static function inserir( $ingredienteProduto ){
         $sql = " INSERT INTO ingredientesProduto "
              . " (codProduto, codIngrediente,nome) "
@@ -12,32 +12,23 @@ class IngredienteProdutoDAO {
              . $ingredienteProduto->getNome()       . "  ) ";
         Conexao::executar($sql);
     }
-
-    public static function getIngredientesProduto($idProduto) {
-        $sql = "SELECT p.nome, "
-                . " i.id "
-                . " FROM produtos p "
-                . " INNER JOIN ingredientes_produtos i ON i.codProduto = p.id "
-                . " WHERE i.codProduto = " . $idProduto;
+public static function getIngredientesProdutos($idProduto){
+        $sql = "SELECT  p.nome "
+             . " FROM ingredientes p "
+             . " INNER JOIN ingredientes_produtos i ON i.codIngrediente = p.id "
+             . " WHERE i.codProduto = " . $idProduto;
+        $result = Conexao::consultar( $sql );
+        $listaIng = new ArrayObject();
 //        echo $sql;
-         
-       $result = Conexao::consultar($sql);
-       Conexao::executar($sql);
-        $lista = new ArrayObject();
-        
-    
-        while (list($nome, $codIngredienteProduto) = mysqli_fetch_row($result)) {
-            $produto = new Produto();
-            $produto->setNome($nome);
-
-            $ingredienteProduto = new IngredienteProduto();
-            $ingredienteProduto->setId($codIngredienteProduto);
-            $ingredienteProduto->setProduto($produto);
-            
-            $lista->append($ingredienteProduto);
+        while( list($nome) = mysqli_fetch_row($result)) {
+            $ingredientesProduto = new IngredientesProduto();
+           
+            $ingredientesProduto->setIngrediente($nome);
+            //FALTAVA ESSA LINHA TBM
+             $listaIng->append($ingredientesProduto);
         }
-        return $lista;
-         
+        return $listaIng;
+                   
+                
     }
-    
 }

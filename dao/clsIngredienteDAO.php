@@ -15,7 +15,6 @@ class IngredienteDAO {
         $lista = new ArrayObject();
         if ($result != NULL) {
             while (list($_id, $_nome) = mysqli_fetch_row($result)) {
-                
                 $ingrediente = new Ingrediente();
                 $ingrediente->setId($_id);
                 $ingrediente->setNome($_nome);
@@ -24,4 +23,6 @@ class IngredienteDAO {
         }
         return $lista;
     }   
+    
+    
 }
