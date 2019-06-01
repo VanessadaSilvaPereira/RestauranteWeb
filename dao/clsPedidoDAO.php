@@ -25,7 +25,7 @@ class PedidoDAO {
                 
                 . " FROM pedidos p                                  "
                 . "ORDER BY p.hora DESC                  ";
-//     echo $sql;
+
         $result = Conexao::consultar($sql);
 
         $lista = new ArrayObject();

@@ -4,14 +4,10 @@ class Produto {
     private $id, $nome, $foto, $preco, $categoria, $descricao;
     
     
-    function __construct($id=NULL, $nome=NULL, $foto=NULL, $preco=NULL, $categoria=NULL, $descricao=NULL) {
-        $this->id = $id;
-        $this->nome = $nome;
-        $this->foto = $foto;
-        $this->preco = $preco;
-        $this->categoria = $categoria;
-        $this->descricao = $descricao;
+    function __construct() {
+        
     }
+
     
     
     function getId() {

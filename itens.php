@@ -1,6 +1,7 @@
 <?php
 require './dao/clsItemDAO.php';
 require 'dao/clsConexao.php';
+require './dao/clsProdutoDAO.php';
 ?>
 <!DOCTYPE html>
 
